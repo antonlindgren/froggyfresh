@@ -1,8 +1,17 @@
 {
   "dependencies": {
     "@discordjs/rest": "^0.5.0",
+    "db-migrate": "^0.11.13",
+    "db-migrate-mysql": "^2.2.0",
     "discord.js": "^13.8.1",
     "dotenv": "^16.0.1",
-    "mysql": "^2.18.1"
+    "mysql2": "^2.3.3"
+  },
+  "scripts": {
+    "start": "node ./discord.js",
+    "migrate:create": "node_modules/db-migrate/bin/db-migrate create",
+    "migrate:up": "node_modules/db-migrate/bin/db-migrate up",
+    "migrate:down": "node_modules/db-migrate/bin/db-migrate down",
+    "migrate:discord": "node ./lib/discMigrations/createCommands.js"
   }
 }
