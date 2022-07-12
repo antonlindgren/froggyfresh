@@ -1,0 +1,10 @@
+{
+  "dev": {
+    "driver": "mysql",
+    "database": "froggyfresh",
+    "host": "localhost",
+    "port": "3306",
+    "user": "froggyfresh",
+    "password": "An0thrS3crt"
+  }
+}
