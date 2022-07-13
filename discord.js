@@ -22,7 +22,7 @@ client.on('interactionCreate', async (interaction) => {
 client.on('messageCreate', async (message) => {
   var user = message.author;
   var channel = client.channels.cache.get(message.channelId);
-  
+
   console.log("User '"+user.username+"' wrote '"+message.content+"' in '#"+channel.name+"'");
   parseChannelMessage(user, channel, message);
 })
