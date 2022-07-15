@@ -3,7 +3,7 @@ exports.up = function (db) {
     CREATE TABLE settings (
       id int(4) NOT NULL AUTO_INCREMENT,
       name varchar(32) NOT NULL DEFAULT '',
-      creator varchar(128) NOT NULL DEFAULT '',
+      value varchar(128) NOT NULL DEFAULT '',
       created DATETIME DEFAULT NOW(),
       PRIMARY KEY (id)
     )
