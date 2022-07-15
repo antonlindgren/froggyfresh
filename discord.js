@@ -3,6 +3,9 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 const { addEsportal } = require('./lib/services/bot')
 const { parseChannelMessage } = require('./lib/services/channel');
 
+var CronJob = require('cron').CronJob;
+const { esportalCron } = require('./lib/cron/esportal');
+
 require('dotenv').config()
 
 client.on('ready', () => {
