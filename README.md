@@ -1,18 +1,20 @@
-# Esportal bot
+# FroggyFresh Discord Bot
 
-Usage:
-pre: Docker, node, npm
+## What is it
+FroggyFresh is a HELL FRESH discord bot, named after the greatest rapper of our time [Froggy Fresh](https://www.youtube.com/watch?v=XArx0ASwyDc).
+It's my (@antonlindgren) first serious nodejs project, in which I try to learn the language, with my friend @jimjardland.
+We use it to track our friends when they play eSportal. We will most likely also add non-esportal-related features.
 
-Create a .env (see example)
+## Usage
 
+**Prerequisites**: Docker, node, npm
 
-`docker-compose up -d`
+- Create a .env (see example)
+- `docker-compose up -d`
+- `npm run migrate up`
+- `npm run migrate:discord`
+- `npm start`
 
-`npm run migrate up`
+## Commands
 
-`npm run migrate:discord`
-
-`npm start`
-
-
-When added the bot to Discord write /esportal nickname
+When the bot is added to discord, you can write `/esportal nickname` for it to track you (or someone else).
