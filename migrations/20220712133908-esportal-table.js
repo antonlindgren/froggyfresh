@@ -4,9 +4,10 @@ exports.up = function (db) {
       id int(4) NOT NULL AUTO_INCREMENT,
       nickname varchar(32) NOT NULL DEFAULT '',
       discord varchar(128) NOT NULL DEFAULT '',
+      esportal_id varchar(128) NOT NULL DEFAULT '',
       created TIME DEFAULT CURRENT_TIME,
       PRIMARY KEY (id),
-      UNIQUE(nickname)
+      UNIQUE(esportal_id)
     )
   `)
 }
